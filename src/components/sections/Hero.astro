@@ -1,0 +1,162 @@
+---
+import Section from "@/components/Section.astro";
+import cv from "@/cv";
+import GitHub from "@/icons/GitHub.astro";
+import Linkedin from "@/icons/Linkedin.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import X from "@/icons/X.astro";
+
+const { basics } = cv;
+const { name, label, image, location, email, phone, profiles } = basics;
+const { address, city, region, postalCode } = location;
+
+const SOCIAL_LINKS: Record<string, any> = {
+  GitHub,
+  Linkedin,
+  X,
+};
+---
+
+<Section>
+  <div class="container">
+    <div class="info">
+      <h1>{name}</h1>
+      <h2>{label}</h2>
+      <span><WorldMap />{`${address}, ${city}, ${postalCode}, ${region}`}</span>
+      <ul class="print-only">
+        <li>
+          {`💻 ${email} `}
+        </li>
+        <li>
+          {`📞 ${phone} `}
+        </li>
+      </ul>
+      <footer class="no-print">
+        {
+          email && (
+            <a
+              href={`mailto:${email}`}
+              title={`Enviar un correo electronico a ${email}`}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Mail />
+            </a>
+          )
+        }
+        {
+          phone && (
+            <a
+              href={`mailto:${phone}`}
+              title={`Llama por telefon al ${phone}`}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Phone />
+            </a>
+          )
+        }{
+          profiles.map((profile) => {
+            const { network, url } = profile;
+            const Icon = SOCIAL_LINKS[network];
+            if (!Icon) return null;
+            return (
+              <a
+                href={url}
+                title={`Ir a ${network}`}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Icon />
+              </a>
+            );
+          })
+        }
+      </footer>
+    </div>
+    <figure class="image">
+      <img src={image} alt={`${name} avatar`} />
+    </figure>
+  </div>
+</Section>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    color: #444;
+    font-size: 1.1rem;
+    text-wrap: balance;
+    font-weight: 500;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  footer {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    a {
+      color: #777;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #eee;
+      padding: 6px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      width: 32px;
+      height: 32px;
+
+      &:hover {
+        background: #eee;
+      }
+    }
+  }
+  .image {
+    width: 160px;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    border: 2px solid #555;
+    overflow: hidden;
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .print-only {
+    display: none;
+  }
+
+  @media print {
+    ul.print-only li {
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+
+    .no-print {
+      display: none;
+    }
+    .print-only {
+      display: block;
+    }
+  }
+</style>

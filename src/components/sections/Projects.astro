@@ -1,0 +1,76 @@
+---
+import Section from "@/components/Section.astro";
+import cv from "@/cv";
+const { projects } = cv;
+---
+
+<Section title="Projects">
+  <ul>
+    {
+      projects.map(({ name, url, description, highlights }) => (
+        <li>
+          <article>
+            <header>
+              <a target="_blank" href={url} rel="noopener noreferrer">
+                {name}
+              </a>
+              <p>{description}</p>
+            </header>
+
+            <footer class="description">
+              {highlights.map((highlight) => (
+                <span>{highlight}</span>
+              ))}
+            </footer>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  article {
+    border-radius: 8px;
+    border: 1px solid #f4f4f4;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 100%;
+    justify-content: start;
+  }
+
+  header {
+    font-size: 1rem;
+    font-weight: 800;
+    flex: 1;
+
+    a {
+      color: #000;
+      font-size: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    & > span {
+      padding: 4px;
+      width: fit-content;
+      background-color: beige;
+      font-size: 0.6rem;
+    }
+  }
+</style>

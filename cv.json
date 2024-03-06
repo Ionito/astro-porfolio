@@ -1,0 +1,299 @@
+{
+  "basics": {
+    "name": "Jonatan Scheines",
+    "label": "Frontend Developer con más de 12 años de experiencia",
+    "image": "https://scontent.faep24-2.fna.fbcdn.net/v/t1.6435-9/73333475_1438735579608262_977076004386242560_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeGvSPT7LhXjOx8jDaQtnvZl-nsfsL1i0er6ex-wvWLR6n6LDHo7ypsxDSB65tIe5K0c_IYs6Vj2ixhqJm_tzNm0&_nc_ohc=zhVciDz9VYkAX-EUMaN&_nc_ht=scontent.faep24-2.fna&oh=00_AfB3LBDwQfMNR6L24304f0ebyT50eUOe1VQ9D1O3HlaKCQ&oe=660E6C23",
+    "email": "artemarsupial@gmail.com",
+    "phone": "(+54) 911 39231944",
+    "url": "https://jonatanscheines.com",
+    "summary": "Soy un desarrollador Frontend con más de 10 años de experiencia en el sector de la tecnología. Me apasiona el diseño de interfaces de usuario intuitivas y atractivas, y tengo habilidades técnicas en HTML, CSS, JavaScript, Typescript y React. Me considero un profesional enfocado en la calidad del código y en la usabilidad de las aplicaciones. A lo largo de mi carrera, he tenido la oportunidad de trabajar en proyectos de diferentes ámbitos y sectores, lo que me ha permitido adquirir una amplia experiencia en el desarrollo de distintos tipos de aplicaciones web. Soy un colaborador proactivo, con una actitud positiva y me gusta el trabajo en equipo.",
+    "location": {
+      "address": "Necochea 951",
+      "postalCode": "CP 1641",
+      "city": "Argentina",
+      "countryCode": "AR",
+      "region": "Martinez"
+    },
+    "profiles": [
+      {
+        "network": "X",
+        "username": "Topo muerto",
+        "url": "https://twitter.com/artemarsupial"
+      },
+      {
+        "network": "Linkedin",
+        "username": "-",
+        "url": "https://www.linkedin.com/in/jonatan-scheines-205b3028/"
+      },
+      {
+        "network": "GitHub",
+        "username": "ionito",
+        "url": "https://www.github.com/ionito"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Globant",
+      "position": "Senior Web UI Developer",
+      "url": "https://www.globant.com/",
+      "startDate": "2024-01-28",
+      "endDate": null,
+      "summary": "Trabajé en distintos projectos que se me fueron asignando.",
+      "highlights": ["remoto"]
+    },
+    {
+      "name": "Platzi",
+      "position": "Senior Frontend Developer",
+      "url": "https://www.platzi.com/",
+      "startDate": "2022-11-2",
+      "endDate": "2023-07-11",
+      "summary": "Desarrollo del portal de administracion de licencias y usuarios para clientes gubernamentales o grandes empresas",
+      "highlights": ["remoto"]
+    },
+    {
+      "name": "Wildlife",
+      "position": "Senior Frontend Developer",
+      "url": "https://www.wildlife.com/",
+      "startDate": "2021-11-2",
+      "endDate": "2022-11-11",
+      "summary": "Desarrollo de portal para desarrolladores  (solución similar a la que usar Spotify con Backstage)",
+      "highlights": ["hibrido"]
+    },
+    {
+      "name": "Retargetly",
+      "position": "Sr Frontend Developer",
+      "url": "https://www.retargetly.com",
+      "startDate": "2019-4-2",
+      "endDate": "2021-11-17",
+      "summary": "Desarrollo del dashboard de administracion de datos y audiencias",
+      "highlights": ["presencial"]
+    },
+    {
+      "name": "Digitaland",
+      "position": "Javascript Developer",
+      "url": "https://www.digitaland.com",
+      "startDate": "2016-09-12",
+      "endDate": "2019-04-1",
+      "summary": "Desarrollo de piezas animadas para campañas de publicidad digital",
+      "highlights": ["presencial"]
+    },
+    {
+      "name": "Mediabit SA",
+      "position": "Richmedia Developer",
+      "url": "https://mediabit.com.ar/",
+      "startDate": "2016-06-12",
+      "endDate": "2016-10-1",
+      "summary": "Desarrollo de piezas animadas para campañas de publicidad digital",
+      "highlights": ["presencial"]
+    },
+    {
+      "name": "Opera Mediaworks",
+      "position": "Richmedia Developer",
+      "url": "https://opera.com",
+      "startDate": "2015-03-12",
+      "endDate": "2016-06-1",
+      "summary": "Desarrollo de piezas animadas para campañas de publicidad digital",
+      "highlights": ["presencial"]
+    },
+    {
+      "name": "Mediamind / Sismek",
+      "position": "Creative Account Manager",
+      "url": "",
+      "startDate": "2015-03-12",
+      "endDate": "2012-07-1",
+      "summary": "Account manager y ensamblador de piezas animadas para campañas de publicidad digital",
+      "highlights": ["presencial"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad tecnológica de Bahía Blanca",
+      "url": "",
+      "area": "Ingenieria Electronica",
+      "studyType": "Universitario",
+      "startDate": "2000-01-01",
+      "endDate": "2006-01-01",
+      "score": "8.4",
+      "courses": []
+    },
+    {
+      "institution": "Instituto nacional de arte",
+      "url": "",
+      "area": "Artes Multimediales",
+      "studyType": "Terciario",
+      "startDate": "2008-01-01",
+      "endDate": "2010-01-01",
+      "score": "9.2",
+      "courses": []
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+    }
+  ],
+  "languages": [
+    { "language": "Spanish", "fluency": "Native Speaker" },
+    {
+      "language": "English",
+      "fluency": "B2"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "mars.codes",
+      "isActive": true,
+      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "highlights": ["Elige tu propia aventura", "En desarrollo"],
+      "url": "https://mars.codes"
+    },
+    {
+      "name": "AdventJS",
+      "isActive": true,
+      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "highlights": [
+        "+1 millón de visitas",
+        "Multidioma",
+        "JavaScript & TypeScript"
+      ],
+      "url": "https://adventjs.dev"
+    },
+    {
+      "name": "Codember",
+      "isActive": true,
+      "description": "Juego interactivo de programación con retos y secretos",
+      "highlights": ["+2000 usuarios activos", "Retos para cualquier lenguaje"],
+      "url": "https://codember.dev"
+    },
+    {
+      "name": "codi.link",
+      "isActive": true,
+      "description": "Playground de código HTML, CSS y JavaScript para compartir",
+      "highlights": ["100k visitas al mes", "Desarrollado por la comunidad"],
+      "url": "https://codi.link",
+      "github": "https://github.com/midudev/codi.link"
+    },
+    {
+      "name": "Pruebas Técnicas",
+      "isActive": true,
+      "description": "Lista de pruebas técnicas de empresas para practicar programación",
+      "highlights": ["100% gratuito", "+500 soluciones de la comunidad"],
+      "url": "https://pruebastecnicas.com",
+      "github": "https://github.com/midudev/pruebas-tecnicas"
+    },
+    {
+      "name": "miduConf",
+      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
+      "highlights": ["+15k tickets repartidos", "+50k espectadores en directo"],
+      "url": "https://miduconf.com"
+    }
+  ]
+}

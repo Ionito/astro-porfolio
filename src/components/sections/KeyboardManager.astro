@@ -1,0 +1,76 @@
+<footer>
+  Pulsa <kbd>cmd</kbd> + <kbd>K</kbd> para abrir paleta de comandos
+</footer>
+<ninja-keys id="ninja" placeholder="Buscar comando"></ninja-keys>
+
+<script>
+  import "ninja-keys";
+
+  const ninja = document.querySelector("ninja-keys");
+  if (ninja != null) {
+    ninja.data = [
+      {
+        id: "print",
+        title: "🖨️ Imprimir",
+        hotkey: "ctrl+p",
+
+        section: "Projects",
+        handler: () => {
+          window.print();
+        },
+      },
+    ];
+  }
+</script>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  footer {
+    background: #fdfdfd;
+    border-top: 1px solid #eee;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #555;
+    animation: linear fadeIn;
+    view-timeline-name: --revealing;
+    view-timeline-axis: block;
+    animation-timeline: --revealing;
+    animation-range: entry 100% cover 10%;
+  }
+
+  @media print {
+    footer {
+      display: none;
+    }
+    #ninja {
+      display: none;
+    }
+  }
+
+  kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.2),
+      0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+  }
+</style>
