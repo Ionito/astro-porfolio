@@ -1,33 +1,37 @@
 ---
-import Section from "@/components/Section.astro";
-import cv from "@/cv";
+const { json: education } = Astro.props;
 
-const { education } = cv;
+interface Props {
+  json: {
+    institution: string;
+    area: string;
+    startDate: string;
+    endDate: string | null;
+  }[];
+}
 ---
 
-<Section title="education">
-  <ul>
-    {
-      education.map(({ institution, startDate, endDate, area }) => {
-        const startYear = new Date(startDate).getFullYear();
-        const endYear =
-          endDate !== null ? new Date(endDate).getFullYear() : "PRESENTE";
-        return (
-          <li>
-            <div class="header">
-              <h3>{institution}</h3>
+<ul>
+  {
+    education.map(({ institution, startDate, endDate, area }) => {
+      const startYear = new Date(startDate).getFullYear();
+      const endYear =
+        endDate !== null ? new Date(endDate).getFullYear() : "PRESENTE";
+      return (
+        <li>
+          <div class="header">
+            <h3>{institution}</h3>
 
-              <span class="dates">
-                {startYear} - {endYear}
-              </span>
-            </div>
-            <p>{area}</p>
-          </li>
-        );
-      })
-    }
-  </ul>
-</Section>
+            <span class="dates">
+              {startYear} - {endYear}
+            </span>
+          </div>
+          <p>{area}</p>
+        </li>
+      );
+    })
+  }
+</ul>
 
 <style>
   li {

@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Jonatan Scheines",
-    "label": "Frontend Developer con más de 12 años de experiencia",
+    "label": "Frontend developer with over 12 years of experience",
     "image": "https://scontent.faep24-2.fna.fbcdn.net/v/t1.6435-9/73333475_1438735579608262_977076004386242560_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeGvSPT7LhXjOx8jDaQtnvZl-nsfsL1i0er6ex-wvWLR6n6LDHo7ypsxDSB65tIe5K0c_IYs6Vj2ixhqJm_tzNm0&_nc_ohc=zhVciDz9VYkAX-EUMaN&_nc_ht=scontent.faep24-2.fna&oh=00_AfB3LBDwQfMNR6L24304f0ebyT50eUOe1VQ9D1O3HlaKCQ&oe=660E6C23",
     "email": "artemarsupial@gmail.com",
     "phone": "(+54) 911 39231944",
     "url": "https://jonatanscheines.com",
-    "summary": "Soy un desarrollador Frontend con más de 10 años de experiencia en el sector de la tecnología. Me apasiona el diseño de interfaces de usuario intuitivas y atractivas, y tengo habilidades técnicas en HTML, CSS, JavaScript, Typescript y React. Me considero un profesional enfocado en la calidad del código y en la usabilidad de las aplicaciones. A lo largo de mi carrera, he tenido la oportunidad de trabajar en proyectos de diferentes ámbitos y sectores, lo que me ha permitido adquirir una amplia experiencia en el desarrollo de distintos tipos de aplicaciones web. Soy un colaborador proactivo, con una actitud positiva y me gusta el trabajo en equipo.",
+    "summary": "Frontend developer with over 12 years of experience in the technology sector. Specializing in crafting intuitive and visually appealing user interfaces, they possess strong technical skills in HTML, CSS, JavaScript, Typescript, and React. Their commitment to code quality and application usability is evident in their track record across diverse projects in various sectors. A proactive collaborator with a positive attitude, they have demonstrated leadership in contributing to successful team efforts.",
     "location": {
       "address": "Necochea 951",
       "postalCode": "CP 1641",
@@ -39,8 +39,8 @@
       "url": "https://www.globant.com/",
       "startDate": "2024-01-28",
       "endDate": null,
-      "summary": "Trabajé en distintos projectos que se me fueron asignando.",
-      "highlights": ["remoto"]
+      "summary": "Currently working on Squarespace and other projects that I have been assigned.",
+      "highlights": ["remote"]
     },
     {
       "name": "Platzi",
@@ -48,8 +48,8 @@
       "url": "https://www.platzi.com/",
       "startDate": "2022-11-2",
       "endDate": "2023-07-11",
-      "summary": "Desarrollo del portal de administracion de licencias y usuarios para clientes gubernamentales o grandes empresas",
-      "highlights": ["remoto"]
+      "summary": "Frontend development of the B2B dashboard product. Suggesting and improving the user experience to increase the sales. Improving UI of already builds products and shared libraries between products. Coordinating meeting",
+      "highlights": ["remote"]
     },
     {
       "name": "Wildlife",
@@ -57,8 +57,8 @@
       "url": "https://www.wildlife.com/",
       "startDate": "2021-11-2",
       "endDate": "2022-11-11",
-      "summary": "Desarrollo de portal para desarrolladores  (solución similar a la que usar Spotify con Backstage)",
-      "highlights": ["hibrido"]
+      "summary": "Frontend development of the Ring Developer Portal. Creation and refactoring of several team's plugins. Improving UI of already built products ",
+      "highlights": ["hibryd"]
     },
     {
       "name": "Retargetly",
@@ -66,8 +66,8 @@
       "url": "https://www.retargetly.com",
       "startDate": "2019-4-2",
       "endDate": "2021-11-17",
-      "summary": "Desarrollo del dashboard de administracion de datos y audiencias",
-      "highlights": ["presencial"]
+      "summary": "Frontend development of the Retargetly data management platform (DMP). Integral migration of the DMP platform from Angularjs to React. Setting starting projects, CI, and workflow for other internal apps that the company offers.",
+      "highlights": []
     },
     {
       "name": "Digitaland",
@@ -75,7 +75,7 @@
       "url": "https://www.digitaland.com",
       "startDate": "2016-09-12",
       "endDate": "2019-04-1",
-      "summary": "Desarrollo de piezas animadas para campañas de publicidad digital",
+      "summary": "Development and implementation of customs Ads formats, using plain JavaScript, html, and CSS (platform agnostic). Handling and implementation of custom Ads features in Double Click Studio, Double click Manager, and Sizmek.",
       "highlights": ["presencial"]
     },
     {
@@ -84,7 +84,7 @@
       "url": "https://mediabit.com.ar/",
       "startDate": "2016-06-12",
       "endDate": "2016-10-1",
-      "summary": "Desarrollo de piezas animadas para campañas de publicidad digital",
+      "summary": "Development and implementation of customs Ads formats, using plain JavaScript, html, and CSS (platform agnostic). Handling and implementation of custom Ads features in Double Click Studio, Double click Manager, and Sizmek.",
       "highlights": ["presencial"]
     },
     {
@@ -93,7 +93,7 @@
       "url": "https://opera.com",
       "startDate": "2015-03-12",
       "endDate": "2016-06-1",
-      "summary": "Desarrollo de piezas animadas para campañas de publicidad digital",
+      "summary": "Development and implementation of customs Ads formats, using plain JavaScript, html, and CSS.  Handling and implementation of custom Ads features in several platforms like Celtra, justAd, Sparkflow, and Sizmek. Development and implementation of custom formats including html5, html5 mobile, VAST and VPAID ",
       "highlights": ["presencial"]
     },
     {
@@ -102,7 +102,7 @@
       "url": "",
       "startDate": "2015-03-12",
       "endDate": "2012-07-1",
-      "summary": "Account manager y ensamblador de piezas animadas para campañas de publicidad digital",
+      "summary": "Reception, adaptation and ads programming in JavaScript for the proper functioning of the advertising system. Adserver management, administration, upload, tracing and modification of Rich Media publicity campaign. Training and client´s meetings to explain the full implementation process . Development and implementation of custom formats including html5, html5 mobile, VAST and VPAID ",
       "highlights": ["presencial"]
     }
   ],
@@ -110,8 +110,8 @@
     {
       "institution": "Universidad tecnológica de Bahía Blanca",
       "url": "",
-      "area": "Ingenieria Electronica",
-      "studyType": "Universitario",
+      "area": "Electronic Engineering",
+      "studyType": "University",
       "startDate": "2000-01-01",
       "endDate": "2006-01-01",
       "score": "8.4",
@@ -120,8 +120,8 @@
     {
       "institution": "Instituto nacional de arte",
       "url": "",
-      "area": "Artes Multimediales",
-      "studyType": "Terciario",
+      "area": "Aultimedia art & interactive design",
+      "studyType": "College",
       "startDate": "2008-01-01",
       "endDate": "2010-01-01",
       "score": "9.2",

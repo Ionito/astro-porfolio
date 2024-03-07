@@ -1,12 +1,9 @@
 ---
-import Section from "@/components/Section.astro";
-import cv from "@/cv";
+const { json } = Astro.props;
 
 const {
   basics: { summary },
-} = cv;
+} = json;
 ---
 
-<Section title="Sobre mi">
-  <p>{summary}</p>
-</Section>
+<p>{summary}</p>

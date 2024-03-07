@@ -1,4 +1,6 @@
 ---
+import Layout from "@/layouts/layout.astro";
+
 import Section from "@/components/Section.astro";
 import About from "@/components/sections/About.astro";
 import Eductation from "@/components/sections/Education.astro";
@@ -8,8 +10,7 @@ import KeyboardManager from "@/components/sections/KeyboardManager.astro";
 import Langs from "@/components/sections/Langs.astro";
 import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
-import Layout from "@/layouts/layout.astro";
-import cv from "@cv-es";
+import cv from "@cv-en";
 const { name, label } = cv.basics;
 ---
 
@@ -17,22 +18,22 @@ const { name, label } = cv.basics;
   <!-- src/pages/index.astro -->
   <main>
     <Hero json={cv.basics} />
-    <Section title="Sobre mi">
+    <Section title="About">
       <About json={cv} />
     </Section>
-    <Section title="Experiencia laboral">
+    <Section title="Laboral experience">
       <Experience json={cv.work} />
     </Section>
-    <Section title="Habilidades">
+    <Section title="Skills">
       <Skills json={cv.skills} />
     </Section>
-    <Section title="Educación">
+    <Section title="Education">
       <Eductation json={cv.education} />
     </Section>
-    <Section title="Idiomas">
+    <Section title="Languages">
       <Langs json={cv.languages} />
     </Section>
-    <Section title="Proyectos">
+    <Section title="Projects">
       <Projects json={cv.projects} />
     </Section>
   </main>

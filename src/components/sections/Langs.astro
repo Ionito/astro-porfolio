@@ -1,0 +1,57 @@
+---
+interface Props {
+  json: {
+    language: string;
+    fluency: string;
+  }[];
+}
+const { json } = Astro.props;
+---
+
+<ul>
+  {
+    json.map(({ language, fluency }) => (
+      <li>
+        <span class="lang">{language}</span> <span class="flu">{fluency}</span>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    .lang {
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-bottom-left-radius: 6px;
+      border-top-left-radius: 6px;
+      background: #aaa;
+      color: white;
+    }
+
+    @media print {
+      .lang {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    .flu {
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-bottom-right-radius: 6px;
+      border-top-right-radius: 6px;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+  }
+</style>

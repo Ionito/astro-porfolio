@@ -1,42 +1,45 @@
 ---
-import Section from "@/components/Section.astro";
-import cv from "@/cv";
-
-const { work } = cv;
+interface Props {
+  json: {
+    name: string;
+    position: string;
+    startDate: string;
+    endDate: string | null;
+    summary: string;
+    highlights: string[];
+  }[];
+}
+const { json: work } = Astro.props;
 ---
 
-<Section title="Experiencia laboral">
-  <ul>
-    {
-      work.map(
-        ({ name, position, startDate, endDate, summary, highlights }) => {
-          const statYear = new Date(startDate).getFullYear();
-          const endYear =
-            endDate !== null ? new Date(endDate).getFullYear() : "PRESENTE";
-          return (
-            <li>
-              <div class="header">
-                <div class="title">
-                  <h3>{name}</h3>
-                  <div class="highlights">
-                    {highlights.map((highlight) => (
-                      <span>{highlight}</span>
-                    ))}
-                  </div>
-                </div>
-                <span class="dates">
-                  {statYear} - {endYear}
-                </span>
+<ul>
+  {
+    work.map(({ name, position, startDate, endDate, summary, highlights }) => {
+      const statYear = new Date(startDate).getFullYear();
+      const endYear =
+        endDate !== null ? new Date(endDate).getFullYear() : "PRESENTE";
+      return (
+        <li>
+          <div class="header">
+            <div class="title">
+              <h3>{name}</h3>
+              <div class="highlights">
+                {highlights.map((highlight) => (
+                  <span>{highlight}</span>
+                ))}
               </div>
-              <h4>{position}</h4>
-              <p>{summary}</p>
-            </li>
-          );
-        }
-      )
-    }
-  </ul>
-</Section>
+            </div>
+            <span class="dates">
+              {statYear} - {endYear}
+            </span>
+          </div>
+          <h4>{position}</h4>
+          <p>{summary}</p>
+        </li>
+      );
+    })
+  }
+</ul>
 
 <style>
   li {

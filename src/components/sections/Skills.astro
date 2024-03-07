@@ -1,14 +1,14 @@
 ---
-import Section from "@/components/Section.astro";
-import cv from "@/cv";
-const { skills } = cv;
+interface Props {
+  json: { name: string }[];
+}
+
+const { json: skills } = Astro.props;
 ---
 
-<Section title="Skills">
-  <ul>
-    {skills.map(({ name }) => <li>{name}</li>)}
-  </ul>
-</Section>
+<ul>
+  {skills.map(({ name }) => <li>{name}</li>)}
+</ul>
 
 <style>
   ul {

@@ -1,33 +1,38 @@
 ---
-import Section from "@/components/Section.astro";
-import cv from "@/cv";
-const { projects } = cv;
+interface Props {
+  json: {
+    name: string;
+    url: string;
+    description: string;
+    highlights: string[];
+  }[];
+}
+
+const { json: projects } = Astro.props;
 ---
 
-<Section title="Projects">
-  <ul>
-    {
-      projects.map(({ name, url, description, highlights }) => (
-        <li>
-          <article>
-            <header>
-              <a target="_blank" href={url} rel="noopener noreferrer">
-                {name}
-              </a>
-              <p>{description}</p>
-            </header>
+<ul>
+  {
+    projects.map(({ name, url, description, highlights }) => (
+      <li>
+        <article>
+          <header>
+            <a target="_blank" href={url} rel="noopener noreferrer">
+              {name}
+            </a>
+            <p>{description}</p>
+          </header>
 
-            <footer class="description">
-              {highlights.map((highlight) => (
-                <span>{highlight}</span>
-              ))}
-            </footer>
-          </article>
-        </li>
-      ))
-    }
-  </ul>
-</Section>
+          <footer class="description">
+            {highlights.map((highlight) => (
+              <span>{highlight}</span>
+            ))}
+          </footer>
+        </article>
+      </li>
+    ))
+  }
+</ul>
 
 <style>
   ul {

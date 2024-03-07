@@ -1,14 +1,34 @@
 ---
+interface Props {
+  json: {
+    name: string;
+    label: string;
+    image: string;
+    location: {
+      address: string;
+      postalCode: string;
+      city: string;
+      region: string;
+    };
+    profiles: {
+      network: string;
+      url: string;
+      username: string;
+    }[];
+    phone: string;
+    email: string;
+  };
+}
+
 import Section from "@/components/Section.astro";
-import cv from "@/cv";
 import GitHub from "@/icons/GitHub.astro";
 import Linkedin from "@/icons/Linkedin.astro";
 import Mail from "@/icons/Mail.astro";
 import Phone from "@/icons/Phone.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 import X from "@/icons/X.astro";
+const { json: basics } = Astro.props;
 
-const { basics } = cv;
 const { name, label, image, location, email, phone, profiles } = basics;
 const { address, city, region, postalCode } = location;
 
